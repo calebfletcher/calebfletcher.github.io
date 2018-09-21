@@ -48,6 +48,8 @@ bio:
                     <section id="banner">
                         <div class="inner">
                             <h2>Caleb Fletcher</h2>
+                            {{ site.bio }}
+                            {{ site.bio[0] }}
 
                             {% for item in site.bio %}
                                 <p>{{ item }}</p>
