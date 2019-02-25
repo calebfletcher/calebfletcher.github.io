@@ -114,6 +114,8 @@
     									  <h2>Contact Me</h2>
                       </header>
     									<form method="post" action="https://script.google.com/macros/s/AKfycbzgzcmTOnL259V1oKQgHcOIP1lIs6JRDkKG8lBv5-rpIQixEFxo/exec" class="gform" style="width: 60em; margin: 0 auto;">
+                        <label class="sr-only">Keep this field blank</label>
+                        <input id="honeypot" style="display: none;" type="text" name="honeypot" value="" />
     										<div class="row gtr-uniform">
     											<div class="col-6 col-12-xsmall">
     												<input type="text" name="name" value="" placeholder="Name" />
@@ -160,6 +162,7 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
+            <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
 
     </body>
 </html>
