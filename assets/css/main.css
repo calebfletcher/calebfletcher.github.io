@@ -2534,12 +2534,22 @@ input, select, textarea {
 	}
 
 		.features li {
+			width: 50%;
+		}
+		.features li h3 {
+			overflow-wrap: break-word;
+  		word-wrap: break-word;
+		}
+		.features a {
 			padding: 4em 4em 2em 6em ;
 			display: block;
 			position: relative;
 			text-align: left;
-			width: 50%;
+			width: 100%;
+			height: 100%;
+			border-bottom: none;
 		}
+
 
 			.features li:nth-child(1) {
 				background-color: rgba(0, 0, 0, 0.035);
@@ -2608,12 +2618,12 @@ input, select, textarea {
 
 			@media screen and (max-width: 980px) {
 
-				.features li {
+				.features a {
 					padding: 3em 2em 1em 2em ;
 					text-align: center;
 				}
 
-					.features li:before {
+					.features a:before {
 						left: 0;
 						margin: 0 0 1em 0;
 						position: relative;
@@ -2624,17 +2634,29 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				.features li {
+				.features a {
 					padding: 3em 0 1em 0 ;
 					background-color: transparent !important;
 					border-top: solid 2px #fff;
 					width: 100%;
 				}
 
-					.features li:first-child {
+					.features a:first-child {
 						border-top: 0;
 					}
 
+			}
+			.features li p, .features li h3, .features li {
+					transition: 0.3s;
+			}
+			.features li:hover {
+					background-color: white;
+			}
+			.features li:hover p {
+					color: #202b65;
+			}
+			.features li:hover h3 {
+					color: #202b65;
 			}
 
 /* Spotlight */
