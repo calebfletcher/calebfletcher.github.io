@@ -10,7 +10,7 @@
             githubData = (githubData.length > numberOfRepos) ? githubData.slice(0, numberOfRepos) : githubData
             for (const repo of githubData) {
                 const forkString = repo.fork ? ' (Fork)' : ''
-                const descriptionString = repo.description ? `<p>${repo.description}</p>` : ''
+                const descriptionString = (repo.description != null) ? `<p>${repo.description}</p>` : ''
                 let el = document.createElement("li")
                 let a = document.createElement("a")
                 a.href = repo.html_url
