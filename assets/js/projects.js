@@ -21,6 +21,6 @@
             container.appendChild(ul)
         }
     };
-    xhttp.open('GET', 'https://api.github.com/users/calebfletcher/repos', true);
+    xhttp.open('GET', 'https://api.github.com/users/calebfletcher/repos?sort=updated', true);
     xhttp.send();
 })()
