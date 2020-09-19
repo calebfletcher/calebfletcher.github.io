@@ -2541,7 +2541,7 @@ input, select, textarea {
   		word-wrap: break-word;
 		}
 		.features a {
-			padding: 4em 4em 2em 6em ;
+			padding: 2em 2em 2em 2em ;
 			display: block;
 			position: relative;
 			text-align: left;
