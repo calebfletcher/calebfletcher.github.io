@@ -9,12 +9,11 @@
             let githubData = JSON.parse(this.responseText)
             githubData = (githubData.length > numberOfRepos) ? githubData.slice(0, numberOfRepos) : githubData
             for (const repo of githubData) {
-                const forkString = repo.fork ? ' (Fork)' : ''
                 const descriptionString = (repo.description != null) ? `<p>${repo.description}</p>` : ''
                 let el = document.createElement("li")
                 let a = document.createElement("a")
                 a.href = repo.html_url
-                a.innerHTML = `<h3>${repo.name}${forkString}</h3>${descriptionString}`
+                a.innerHTML = `<h3>${repo.name}</h3>${descriptionString}`
                 el.appendChild(a)
                 ul.appendChild(el)
             }
