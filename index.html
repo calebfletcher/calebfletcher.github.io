@@ -119,15 +119,14 @@
                 <header class="major">
                     <h2>Contact Me</h2>
                 </header>
-                    <form method="post" action="https://script.google.com/macros/s/AKfycbzgzcmTOnL259V1oKQgHcOIP1lIs6JRDkKG8lBv5-rpIQixEFxo/exec" class="gform" style="width: 60em; margin: 0 auto;">
-                        <label class="sr-only">Keep this field blank</label>
-                        <input id="honeypot" style="display: none;" type="text" name="honeypot" value="" />
+                    <form method="post" action="https://formspree.io/xknpnyle" class="gform" style="width: 60em; margin: 0 auto;">
+                        <input type="hidden" name="_subject" value="Contact Form Submitted" />
                         <div class="row gtr-uniform">
                             <div class="col-6 col-12-xsmall">
                                 <input type="text" name="name" value="" placeholder="Name" />
                             </div>
                             <div class="col-6 col-12-xsmall">
-                                <input type="email" name="email" value="" placeholder="Email" />
+                                <input type="email" name="_replyto" value="" placeholder="Email" />
                             </div>
                             <div class="col-12">
                                 <textarea name="message" placeholder="Enter your message" rows="6"></textarea>
@@ -138,10 +137,6 @@
                                     <li><input type="reset" value="Reset" /></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div style="display:none" class="thankyou_message">
-                            <br /><br />
-                            <h2>Message Sent</h2>
                         </div>
                     </form>
             </section>
@@ -167,7 +162,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
         <script src="assets/js/projects.js"></script>
     </body>
 </html>
