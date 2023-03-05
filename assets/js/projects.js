@@ -9,6 +9,9 @@
             let githubData = JSON.parse(this.responseText)
             let i = 0;
             while (i < numberOfRepos) {
+                if (i >= githubData.length) {
+                    break
+                }
                 const repo = githubData[i]
 
                 if (repo.fork) {
