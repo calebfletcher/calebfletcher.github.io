@@ -9,6 +9,9 @@
             let githubData = JSON.parse(this.responseText)
             let count = 0;
             for (let repo of githubData) {
+                if (count >= numberOfRepos) {
+                    break;
+                }
                 if (repo.fork) {
                     continue
                 }
