@@ -7,14 +7,8 @@
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let githubData = JSON.parse(this.responseText)
-            let i = 0;
-            while (i < numberOfRepos) {
-                if (i >= githubData.length) {
-                    break
-                }
-                const repo = githubData[i]
-                i++;
-
+            let count = 0;
+            for (let repo of githubData) {
                 if (repo.fork) {
                     continue
                 }
@@ -29,6 +23,8 @@
                 a.innerHTML = `<h3>${repo.name}</h3>${descriptionString}`
                 el.appendChild(a)
                 ul.appendChild(el)
+
+                count++
             }
             container.appendChild(ul)
         }
